@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">DO YOU WANNA COOKIES?</h1>
+    <hr />
+    <form method="post">
+        <input type="text" name="value"/>
+        <input type="date" value="2023-04-14" name="currentdate"/>
+        <input type="submit" value="Submit" />
+    </form>
+    <h1 class="message">@ViewBag.Message</h1>
+     <h1 class="message">@ViewBag.Debug</h1>
+</div>
+
+<style>
+    .message{
+        text-align:center;
+        color:aquamarine;
+        margin: 10px;
+    }
+</style>
